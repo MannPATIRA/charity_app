@@ -1,11 +1,26 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-white flex flex-col p-8">
       
-      {/* Top Right Sign Up and Login Links */}
-      <header className="w-full flex justify-end p-4">
+      {/* Top Logo and Right Sign Up and Login Links */}
+      <header className="w-full flex justify-between items-center p-4">
+        {/* Logo Section */}
+        <div className="flex items-center">
+          <Link href="/">
+            <Image
+              src="/lib/logo_eduaid.png"  // Replace with your logo image path
+              alt="EduAid Logo"
+              width={150}  // Adjust size as needed
+              height={50}
+              priority
+            />
+          </Link>
+        </div>
+
+        {/* Sign Up and Login Links */}
         <nav className="flex gap-6 text-gray-600 text-lg font-medium">
           <Link href="/charity_login" className="hover:text-gray-900 transition-colors">
             Login
@@ -18,7 +33,16 @@ export default function Home() {
 
       {/* Main Content */}
       <main className="flex flex-col items-center justify-center flex-grow">
-        <h1 className="text-4xl font-bold text-gray-900 mb-4">Welcome to EduAid</h1>
+        <h1 className="text-4xl font-bold text-gray-900 mb-4 flex items-center">
+          <span>Welcome to</span>
+          <Image
+            src="/lib/logo_eduaid.png" // Use the same logo here for the image part
+            alt="EduAid"
+            width={150}  // Adjust size as needed
+            height={50}  // Adjust size as needed
+            className="ml-2 mb-5" // Add margin to the left and bottom
+          />
+        </h1>
         <p className="text-gray-600 mb-12">Empowering schools through charitable aid</p>
 
         {/* Action Buttons */}

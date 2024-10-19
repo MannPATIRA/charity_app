@@ -72,7 +72,7 @@ export default function CharityDashboard() {
             {[...Array(6)].map((_, index) => (
               <Card key={index}>
                 <CardHeader>
-                  <img src={`/placeholder.svg?height=200&width=400`} alt={`School ${index + 1}`} className="w-full h-48 object-cover rounded-t-lg" />
+                  <img src={`/lib/school${(index) % 4 + 1}.jpeg`} alt={`School ${index + 1}`} className="w-full h-48 object-cover rounded-t-lg" />
                 </CardHeader>
                 <CardContent>
                   <h3 className="text-lg font-semibold">School {index + 1}</h3>

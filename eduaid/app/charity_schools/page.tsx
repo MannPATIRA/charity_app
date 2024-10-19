@@ -9,12 +9,12 @@ import { Checkbox } from "../../components/ui/checkbox"
 
 // Dummy data for schools
 const schools = [
-  { id: 1, name: "Sunrise Elementary", location: "Nairobi, Kenya", image: "/placeholder.svg?height=200&width=300", aid: ["water", "education"] },
-  { id: 2, name: "Hope High School", location: "Lagos, Nigeria", image: "/placeholder.svg?height=200&width=300", aid: ["electricity", "health"] },
-  { id: 3, name: "Future Primary", location: "Accra, Ghana", image: "/placeholder.svg?height=200&width=300", aid: ["food", "education"] },
-  { id: 4, name: "Unity College", location: "Kampala, Uganda", image: "/placeholder.svg?height=200&width=300", aid: ["water", "health", "education"] },
-  { id: 5, name: "Harmony School", location: "Addis Ababa, Ethiopia", image: "/placeholder.svg?height=200&width=300", aid: ["electricity", "food"] },
-  { id: 6, name: "Progress Academy", location: "Dakar, Senegal", image: "/placeholder.svg?height=200&width=300", aid: ["water", "education", "food"] },
+  { id: 1, name: "Sunrise Elementary", location: "Nairobi, Kenya", image: "/lib/school1.jpeg", aid: ["water", "education"] },
+  { id: 2, name: "Hope High School", location: "Lagos, Nigeria", image: "/lib/school2.jpeg", aid: ["electricity", "health"] },
+  { id: 3, name: "Future Primary", location: "Accra, Ghana", image: "/lib/school3.jpeg", aid: ["food", "education"] },
+  { id: 4, name: "Unity College", location: "Kampala, Uganda", image: "/lib/school4.jpeg", aid: ["water", "health", "education"] },
+  { id: 5, name: "Harmony School", location: "Addis Ababa, Ethiopia", image: "/lib/school1.jpeg", aid: ["electricity", "food"] },
+  { id: 6, name: "Progress Academy", location: "Dakar, Senegal", image: "/lib/school2.jpeg", aid: ["water", "education", "food"] },
 ]
 
 const aidTypes = ["water", "electricity", "health", "education", "food"]
