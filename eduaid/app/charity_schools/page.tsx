@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { Filter, MapPin } from 'lucide-react'
+import Link from 'next/link'
 
 import { Button } from "../../components/ui/button"
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "../../components/ui/card"
@@ -89,7 +90,11 @@ export default function CharitySchools() {
                   </div>
                 </CardContent>
                 <CardFooter>
-                  <Button className="w-full">Offer Aid</Button>
+                <Link href="/video_page">
+                  <button className="w-full sm:w-auto px-8 py-3 bg-gray-200 hover:bg-gray-300 text-gray-900 rounded-lg transition-colors">
+                     Offer Aid
+                  </button>
+                </Link>
                 </CardFooter>
               </Card>
             ))}
