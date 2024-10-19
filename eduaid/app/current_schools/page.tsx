@@ -1,9 +1,9 @@
 import { Bell, Home, LogOut, PlusSquare, School, Search, Settings, Users } from "lucide-react"
 import Link from "next/link"
 
-import { Button } from "./ui/button"
-import { Card, CardContent, CardFooter, CardHeader } from "./ui/card"
-import { Input } from "./ui/input"
+import { Button } from "../../components/ui/button"
+import { Card, CardContent, CardFooter, CardHeader } from "../../components/ui/card"
+import { Input } from "../../components/ui/input"
 
 export default function CharityDashboard() {
   return (
